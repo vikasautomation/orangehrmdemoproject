@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM1 Webapp Automation Suite" parallel="tests">
+
+	<listeners>
+		<listener
+			class-name="com.orangHRM.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Demo WebApp Testcases-1">
+		<classes>
+			<class name="com.orangHRM.qa.testCases.LoginPageTest" />
+			<class name="com.orangHRM.qa.testCases.AdminTest" />
+		</classes>
+	</test> <!-- Test-3 -->
+</suite> <!-- Suite -->

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [OrangeHRM1 Webapp Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.orangHRM.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Demo WebApp Testcases-2(failed)">
+    <classes>
+      <class name="com.orangHRM.qa.testCases.HomePageTest">
+        <methods>
+          <include name="loginPageTest"/>
+          <include name="verifyHeaderMenu"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomeLogo"/>
+        </methods>
+      </class> <!-- com.orangHRM.qa.testCases.HomePageTest -->
+    </classes>
+  </test> <!-- Demo WebApp Testcases-2(failed) -->
+  <test thread-count="5" parallel="tests" name="Demo WebApp Testcases-1(failed)">
+    <classes>
+      <class name="com.orangHRM.qa.testCases.LoginPageTest">
+        <methods>
+          <include name="logoOrangeHRM"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginPageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangHRM.qa.testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Demo WebApp Testcases-1(failed) -->
+  <test thread-count="5" parallel="tests" name="Demo WebApp Testcases-3(failed)">
+    <classes>
+      <class name="com.orangHRM.qa.testCases.AdminTest">
+        <methods>
+          <include name="getUsersText"/>
+          <include name="userRoleDropdown"/>
+          <include name="addUser"/>
+          <include name="enterPassword"/>
+          <include name="getUserManagementText"/>
+          <include name="saveButon"/>
+          <include name="selectCheckbox"/>
+          <include name="UserName"/>
+          <include name="onAdmminPage"/>
+          <include name="verifySearchTitle"/>
+          <include name="loginPageTest"/>
+          <include name="addUserHeading"/>
+          <include name="enterConfirmPassword"/>
+          <include name="setUp"/>
+          <include name="fillemployeeName"/>
+          <include name="cancelButton"/>
+          <include name="fillUserName"/>
+          <include name="userRole"/>
+          <include name="deleteData"/>
+          <include name="tearDown"/>
+          <include name="emloyeename"/>
+          <include name="printUserList"/>
+        </methods>
+      </class> <!-- com.orangHRM.qa.testCases.AdminTest -->
+    </classes>
+  </test> <!-- Demo WebApp Testcases-3(failed) -->
+</suite> <!-- Failed suite [OrangeHRM1 Webapp Automation Suite] -->
